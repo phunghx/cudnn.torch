@@ -1,8 +1,8 @@
-package = "cudnn"
+package = "phnn"
 version = "scm-1"
 
 source = {
-   url = "git://github.com/soumith/cudnn.torch.git",
+   url = "git://github.com/phunghx/cudnn.torch.git",
 }
 
 description = {
@@ -11,7 +11,7 @@ description = {
    All CuDNN modules exposed as nn.Module derivatives so
    that they can be used with torch's neural network package
    ]],
-   homepage = "https://github.com/soumith/cudnn.torch",
+   homepage = "https://github.com/phunghx/cudnn.torch",
    license = "BSD"
 }
 
