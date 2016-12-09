@@ -10,4 +10,4 @@ FIND_PACKAGE(CUDA 7.0 REQUIRED)
 
 FILE(GLOB luasrc *.lua)
 SET(src "")
-ADD_TORCH_PACKAGE(cudnn "${src}" "${luasrc}" "NVIDIA CuDNN Bindings")
+ADD_TORCH_PACKAGE(phnn "${src}" "${luasrc}" "NVIDIA CuDNN Bindings")
