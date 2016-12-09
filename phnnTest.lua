@@ -1,3 +1,5 @@
+require(cudnn.ReLU);
+require(cudnn._Pointwise);
 local phnnTest, parent = torch.class('cudnn.ReLU','cudnn._Pointwise')
 
 function phnnTest:updateOutput(input)
