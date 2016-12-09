@@ -1,9 +1,0 @@
-echo "# mysite" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/phunghx/mysite.git
-git push -u origin master
-
-
-luarocks install "https://raw.githubusercontent.com/phunghx/phnn.torch/master/phnn-scm-1.rockspec"
