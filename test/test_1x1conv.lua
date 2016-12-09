@@ -1,0 +1,4 @@
+require 'cudnn'
+require 'cunn'
+
+
