@@ -1,8 +1,5 @@
 require('torch')
 require('nn')
-
-
-
-include('Dropout.lua')
+include('phDropout.lua')
 
 
