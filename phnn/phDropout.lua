@@ -1,5 +1,4 @@
-local phDropout, Parent = torch.class('nn.Dropout', 'nn.Module')
-
+local phDropout, Parent = torch.class('phnn.phDropout', 'nn.Module')
 function phDropout:__init(p)
    Parent.__init(self)
    self.p = p or 0.5

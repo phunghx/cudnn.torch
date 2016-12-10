@@ -1,5 +1,6 @@
 require('torch')
 require('nn')
-include('phDropout.lua')
-
+phnn = {}
+require('phnn.phDropout')
+return phnn
 
