@@ -1,13 +1,14 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6 FATAL_ERROR)
 CMAKE_POLICY(VERSION 2.6)
 IF(LUAROCKS_PREFIX)
-  MESSAGE(STATUS "Installing CuDNN through Luarocks")
+  MESSAGE(STATUS "Installing fbnn through Luarocks")
   STRING(REGEX REPLACE "(.*)lib/luarocks/rocks.*" "\\1" CMAKE_INSTALL_PREFIX  "${LUAROCKS_PREFIX}")
   MESSAGE(STATUS "Prefix inferred from Luarocks: ${CMAKE_INSTALL_PREFIX}")
 ENDIF()
 FIND_PACKAGE(Torch REQUIRED)
-FIND_PACKAGE(CUDA 7.0 REQUIRED)
 
-FILE(GLOB luasrc *.lua)
-SET(src "")
-ADD_TORCH_PACKAGE(phnn "${src}" "${luasrc}" "NVIDIA CuDNN Bindings")
+FILE(GLOB luasrc phnn/*.lua)
+SET(src
+  init.c
+  )
+ADD_TORCH_PACKAGE(phnn "${src}" "${luasrc}" "Phung's extensions to nn")
